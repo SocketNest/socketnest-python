@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="socketnest_python",
+    name="socketnest",
     version="0.1.0",
     description="SocketNest Server Python Library",
     author="Daniel Mendoza",
@@ -9,6 +9,7 @@ setup(
     license="MIT",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
+    package_data={"socketnest": ["__init__.py"]},
     install_requires=[
         "requests>=2.0.0"
     ],
